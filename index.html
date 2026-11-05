@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 21st Birthday, Palangga! 🎂💖 (Tunisia ✈️ Cebu)</title>
+  
+  <!-- Romantic Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+/* ========================================================
+   21st Birthday Romance Theme: Starlight & Rose Gold (High Performance)
+   ======================================================== */
+
+:root {
+  --primary-pink: #ff4d6d;
+  --secondary-pink: #ff758f;
+  --soft-blush: #ffe5ec;
+  --deep-wine: #1c071a;
+  --wine-glass: rgba(36, 12, 32, 0.92);
+  --gold-accent: #f9d423;
+  --gold-gradient: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+  --romantic-gradient: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+  --card-glass: rgba(255, 255, 255, 0.08);
+  --card-border: rgba(255, 255, 255, 0.18);
+  --text-primary: #ffffff;
+  --text-secondary: #ffccd5;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --shadow-glow: 0 8px 30px rgba(255, 77, 109, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(ellipse at top, #2b0e27 0%, #150512 60%, #0a0109 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* Static Starlight Overlay (Fast & Lag-Free) */
+.stars-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(1px 1px at 25px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 75px 150px, #ffb3c6, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 150px 220px, #ffd700, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 280px 110px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 320px 380px, #ff758f, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 320px 320px;
+  opacity: 0.45;
+  z-index: 1;
+}
+
+/* ========================================================
+   Welcome Gate Modal (Ensures Immediate Audio Autoplay)
+   ======================================================== */
+.welcome-gate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 2, 12, 0.94);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.welcome-gate.dismissed {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.welcome-box {
+  background: linear-gradient(145deg, #2e0d29, #1a0618);
+  border: 2px solid rgba(255, 117, 143, 0.35);
+  border-radius: 28px;
+  padding: 40px 30px;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(255, 77, 109, 0.3);
+  animation: modalPop 0.4s ease-out;
+}
+
+@keyframes modalPop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.welcome-sun {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  animation: bounceSun 2s infinite ease-in-out;
+}
+
+@keyframes bounceSun {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.welcome-pill {
+  display: inline-block;
+  background: rgba(255, 77, 109, 0.25);
+  color: #ffd700;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.welcome-box h2 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.welcome-box p {
+  color: #ffccd5;
+  font-size: 1.05rem;
+  margin-bottom: 26px;
+}
+
+.welcome-btn {
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 16px 24px;
+}
+
+/* Floating Audio Player Widget */
+.audio-widget {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--wine-glass);
+  border: 1px solid var(--card-border);
+  border-radius: 50px;
+  padding: 8px 16px 8px 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.audio-widget:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-pink);
+}
+
+.vinyl-record {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #333 30%, #111 60%, #444 80%);
+  border: 2px solid #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vinyl-center {
+  width: 10px;
+  height: 10px;
+  background: #ff4d6d;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.vinyl-record.spinning {
+  animation: spinRecord 3s linear infinite;
+}
+
+@keyframes spinRecord {
+  100% { transform: rotate(360deg); }
+}
+
+.audio-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-title {
+  color: #fff;
+  font-size: 0.88rem;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* ========================================================
+   Hero Section
+   ======================================================== */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 90px 20px 40px;
+  position: relative;
+}
+
+.greeting-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 77, 109, 0.2);
+  border: 1px solid rgba(255, 77, 109, 0.4);
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffccd5;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6.5vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1.18;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #ffffff 20%, #ff8fa3 60%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.milestone-badge {
+  font-family: var(--font-script);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  color: #ffd700;
+  display: block;
+  margin-top: 6px;
+  text-shadow: 0 0 16px rgba(255, 215, 0, 0.5);
+}
+
+.cebuano-tagline {
+  font-size: clamp(1.05rem, 2.3vw, 1.3rem);
+  color: #ffb3c6;
+  font-weight: 500;
+  margin-bottom: 30px;
+  max-width: 680px;
+  font-style: italic;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 50px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--romantic-gradient);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(255, 77, 109, 0.45);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(255, 77, 109, 0.6);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid var(--card-border);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  color: #ffb3c6;
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ========================================================
+   Sections
+   ======================================================== */
+.section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ff8fa3;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* ========================================================
+   Section 1: Birthday Cake & Candles
+   ======================================================== */
+.cake-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--wine-glass);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 45px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.cake-wrapper {
+  position: relative;
+  width: 270px;
+  height: 250px;
+  margin: 15px auto 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cake-tier {
+  position: relative;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tier-bottom {
+  width: 230px;
+  height: 68px;
+  background: linear-gradient(to right, #9d0208, #d00000, #dc2f02);
+  border: 3px solid #ffccd5;
+}
+
+.tier-middle {
+  width: 170px;
+  height: 58px;
+  background: linear-gradient(to right, #ff758f, #ff4d6d, #c9184a);
+  border: 3px solid #ffe5ec;
+  margin-bottom: -5px;
+}
+
+.tier-top {
+  width: 115px;
+  height: 48px;
+  background: linear-gradient(to right, #fff0f3, #ffccd5, #ffb3c6);
+  border: 3px solid #fff;
+  margin-bottom: -5px;
+}
+
+.frosting-drips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 8px 8px 10px 10px;
+  opacity: 0.9;
+}
+
+.cake-plate {
+  position: absolute;
+  bottom: -10px;
+  width: 260px;
+  height: 14px;
+  background: linear-gradient(to right, #e0e0e0, #ffffff, #cfcfcf);
+  border-radius: 50px;
+}
+
+.candles-row {
+  position: absolute;
+  top: 38px;
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.candle {
+  width: 11px;
+  height: 40px;
+  background: repeating-linear-gradient(45deg, #ffd700, #ffd700 4px, #fff 4px, #fff 8px);
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.candle-flame {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11px;
+  height: 16px;
+  background: radial-gradient(ellipse at bottom, #ffd700 0%, #ff5722 80%, transparent 100%);
+  border-radius: 50% 50% 20% 20%;
+  box-shadow: 0 0 10px #ffd700;
+  transition: opacity 0.3s ease;
+}
+
+.candle.blown .candle-flame {
+  opacity: 0;
+}
+
+.wish-unlocked-card {
+  display: none;
+  background: #fff;
+  color: #2b0e27;
+  padding: 22px;
+  border-radius: 18px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  max-width: 520px;
+  text-align: center;
+}
+
+.wish-unlocked-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: #c9184a;
+  margin-bottom: 8px;
+}
+
+/* ========================================================
+   Section 2: The Secret Gift Box & Love Letter
+   ======================================================== */
+.gift-vault-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.gift-box-interactive {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gift-box-interactive:hover {
+  transform: scale(1.05);
+}
+
+.gift-box-base {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(135deg, #c9184a 0%, #ff4d6d 100%);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(255, 77, 109, 0.4);
+}
+
+.gift-ribbon-vertical {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 100%;
+  background: var(--gold-gradient);
+}
+
+.gift-ribbon-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 24px;
+  background: var(--gold-gradient);
+}
+
+.gift-box-lid {
+  position: absolute;
+  top: 34px;
+  left: -5%;
+  width: 110%;
+  height: 34px;
+  background: linear-gradient(135deg, #ff758f 0%, #ff4d6d 100%);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.gift-bow {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+.gift-bow::before, .gift-bow::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 4px solid #f8b500;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(-45deg);
+}
+
+.gift-bow::after {
+  transform: rotate(45deg);
+}
+
+.gift-instructions {
+  margin-top: 22px;
+  font-size: 1.1rem;
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* Modal Love Letter */
+.letter-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 2, 8, 0.9);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.letter-modal-backdrop.open {
+  display: flex;
+}
+
+.vintage-letter-container {
+  max-width: 660px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fdfbf7;
+  color: #2b111e;
+  border-radius: 16px;
+  padding: 40px 30px 30px;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.wax-seal {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #b71c1c 40%, #7f0000 90%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffd700;
+  font-size: 1.4rem;
+  border: 2px solid #5f0909;
+}
+
+.close-letter-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: rgba(0,0,0,0.06);
+  border: none;
+  font-size: 1.4rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.close-letter-btn:hover {
+  background: #ff4d6d;
+  color: #fff;
+}
+
+.letter-header {
+  border-bottom: 2px dashed rgba(201, 24, 74, 0.25);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.letter-title {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  color: #800f2f;
+  margin-bottom: 4px;
+}
+
+.letter-date {
+  font-size: 0.88rem;
+  color: #a37081;
+  font-style: italic;
+}
+
+.letter-content {
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #331525;
+  white-space: pre-line;
+  margin-bottom: 24px;
+}
+
+.letter-footer {
+  text-align: right;
+  font-family: var(--font-script);
+  font-size: 1.7rem;
+  color: #a4133c;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 12px;
+}
+
+.letter-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+/* ========================================================
+   Section 3: 21 Reasons
+   ======================================================== */
+.reasons-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.progress-pill {
+  background: var(--wine-glass);
+  border: 1px solid var(--card-border);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 18px;
+}
+
+.reason-card {
+  height: 175px;
+  cursor: pointer;
+  perspective: 800px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+  border-radius: 18px;
+}
+
+.reason-card.is-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.card-front {
+  background: linear-gradient(135deg, rgba(255, 77, 109, 0.3) 0%, rgba(32, 11, 26, 0.92) 100%);
+  border: 1px solid rgba(255, 117, 143, 0.35);
+}
+
+.reason-number-badge {
+  width: 40px;
+  height: 40px;
+  background: var(--romantic-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card-front-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card-front-tap {
+  font-size: 0.78rem;
+  color: #ffccd5;
+  margin-top: 5px;
+  opacity: 0.85;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #fff0f3 0%, #ffccd5 100%);
+  color: #2b0e27;
+  transform: rotateY(180deg);
+  border: 2px solid #ff758f;
+  text-align: center;
+}
+
+.card-back-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #c9184a;
+  margin-bottom: 5px;
+}
+
+.card-back-text {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: #3d0c24;
+}
+
+/* ========================================================
+   Section 4: Kilig Meter & Quiz
+   ======================================================== */
+.fun-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+@media (max-width: 820px) {
+  .fun-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fun-card {
+  background: var(--wine-glass);
+  border: 1px solid var(--card-border);
+  border-radius: 22px;
+  padding: 30px 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.meter-display {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.meter-percentage {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ff758f;
+}
+
+.meter-status {
+  font-size: 1.05rem;
+  color: #ffd700;
+  min-height: 30px;
+  font-weight: 600;
+}
+
+.love-slider {
+  width: 100%;
+  height: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, #ffccd5, #ff4d6d, #ffd700);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.love-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #ff4d6d;
+  cursor: pointer;
+}
+
+.quiz-q {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.quiz-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-border);
+  color: #fff;
+  padding: 11px 16px;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-btn:hover {
+  background: rgba(255, 77, 109, 0.3);
+  border-color: #ff4d6d;
+}
+
+.quiz-feedback {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255, 77, 109, 0.2);
+  border: 1px solid rgba(255, 77, 109, 0.4);
+  color: #ffd700;
+  font-weight: 600;
+  display: none;
+}
+
+/* ========================================================
+   Action Dock
+   ======================================================== */
+.love-dock {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: var(--wine-glass);
+  border: 1px solid var(--card-border);
+  border-radius: 50px;
+  padding: 6px 14px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dock-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  padding: 6px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.dock-btn span {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.dock-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 77, 109, 0.25);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 70px 20px 110px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-heart {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer-msg {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: #ffccd5;
+  margin-bottom: 6px;
+}
+
+.footer-sub {
+  font-size: 0.9rem;
+  color: #a37081;
+}
+
+@media (max-width: 600px) {
+  .hero-title { font-size: 2.3rem; }
+  .milestone-badge { font-size: 1.9rem; }
+  .section { padding: 50px 0; }
+  .reasons-grid { grid-template-columns: 1fr; }
+  .dock-btn span { display: none; }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Static Twinkling Starlight Background Overlay -->
+  <div class="stars-overlay"></div>
+
+  <!-- ========================================================
+       WELCOME MORNING GATE (Plays Birthday Song Immediately!)
+       ======================================================== -->
+  <div class="welcome-gate" id="welcomeGate">
+    <div class="welcome-box">
+      <div class="welcome-sun">☀️</div>
+      <div class="welcome-pill">✨ Mata na, <span class="dynamic-nickname">Langga</span>! ✨</div>
+      <h2>Happy 21st Birthday, Palangga! 🎂</h2>
+      <p>A special birthday surprise sent all the way from Tunisia to Cebu just for you...</p>
+      <button class="btn btn-primary welcome-btn" id="enterSiteBtn">
+        <span>🎁 Open Birthday Surprise &amp; Play Song 🎶</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Audio Player Widget -->
+  <div class="audio-widget" id="musicToggleBtn" title="Click to play or pause Happy Birthday melody">
+    <div class="vinyl-record" id="vinylRecord">
+      <div class="vinyl-center"></div>
+    </div>
+    <div class="audio-label">
+      <span class="audio-title">Birthday Song</span>
+      <span id="audioStatusText" style="font-size: 0.75rem; color: #ff8fa3;">Play Song 🎵</span>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       HERO SECTION: Morning Birthday Wake-Up Greeting
+       ======================================================== -->
+  <header class="hero" id="top">
+    <div class="container">
+      <!-- LDR Flight Badge -->
+      <div class="distance-pill" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 215, 0, 0.4); padding: 6px 18px; border-radius: 50px; font-size: 0.88rem; color: #ffd700; margin-bottom: 14px;">
+        <span>Tunisia 🇹🇳</span>
+        <span>✈️ 10,000+ km ✈️</span>
+        <span>Cebu, Philippines 🇵🇭</span>
+      </div>
+
+      <div class="greeting-pill">
+        <span>✨ Good morning &amp; Mata na, <span class="dynamic-nickname">Langga</span>! ✨</span>
+      </div>
+
+      <h1 class="hero-title">
+        Happy 21st Birthday,<br>
+        <span class="dynamic-gf-name">My Beautiful Palangga</span>
+        <span class="milestone-badge">Malipayong ika-21 nga Adlawng Natawhan! 👑</span>
+      </h1>
+
+      <p class="cebuano-tagline">
+        "Across oceans and time zones, you are my favorite notification and my whole heart."
+      </p>
+
+      <div class="hero-actions">
+        <a href="#cake-section" class="btn btn-primary">
+          <span>Make a Wish &amp; Blow Candles 🎂</span>
+        </a>
+        <a href="#letter-section" class="btn btn-secondary">
+          <span>Open Your Birthday Letter 💌</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="#cake-section" class="scroll-indicator">
+      <span>Scroll for surprises</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+      </svg>
+    </a>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         SECTION 1: Virtual Birthday Cake & 21 Candles
+         ======================================================== -->
+    <section class="section" id="cake-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">21 Golden Years</span>
+          <h2 class="section-title">Blow Out Your Candles &amp; Make a Wish 🎂</h2>
+          <p class="section-desc">You are officially 21 today! Close your eyes, make the sweetest wish in your heart, and blow out the candles across the miles.</p>
+        </div>
+
+        <div class="cake-stage" id="cakeStage">
+          <div class="cake-wrapper">
+            <div class="candles-row" id="candlesRow"></div>
+            <div class="cake-tier tier-top">
+              <div class="frosting-drips"></div>
+            </div>
+            <div class="cake-tier tier-middle">
+              <div class="frosting-drips"></div>
+            </div>
+            <div class="cake-tier tier-bottom">
+              <div class="frosting-drips"></div>
+            </div>
+            <div class="cake-plate"></div>
+          </div>
+
+          <div class="cake-msg-box" style="text-align: center; margin-top: 15px;">
+            <button class="btn btn-primary" id="blowCandlesBtn">
+              <span>💨 Blow Out All Candles!</span>
+            </button>
+
+            <!-- Card revealed when candles are blown -->
+            <div class="wish-unlocked-card" id="wishUnlockedCard">
+              <h3>✨ May All Your Dreams Come True, <span class="dynamic-nickname">Langga</span>! ✨</h3>
+              <p>May your 21st year bring you endless happiness, good health, and success. Even with 10,000 kilometers between Tunisia and Cebu, I promise to spend every day loving you until the moment we finally meet and hold each other tight. 💖</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 2: Secret Gift Box & Wax Sealed Love Letter
+         ======================================================== -->
+    <section class="section" id="letter-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct From Tunisia to Cebu</span>
+          <h2 class="section-title">A Special Birthday Gift For You 🎁</h2>
+          <p class="section-desc">I put my whole heart inside this box. Click on the gift to unwrap your personal birthday love letter.</p>
+        </div>
+
+        <div class="gift-vault-stage">
+          <div class="gift-box-interactive" id="giftBoxInteractive" title="Click to unwrap your letter!">
+            <div class="gift-box-lid">
+              <div class="gift-bow"></div>
+              <div class="gift-ribbon-vertical" style="top:0; height:100%;"></div>
+            </div>
+            <div class="gift-box-base">
+              <div class="gift-ribbon-vertical"></div>
+              <div class="gift-ribbon-horizontal"></div>
+            </div>
+          </div>
+          <p class="gift-instructions">✨ Tap the gift box to open your letter ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Love Letter Modal Backdrop -->
+    <div class="letter-modal-backdrop" id="letterModal">
+      <div class="vintage-letter-container">
+        <div class="wax-seal" title="Sealed with pure love">💖</div>
+        <button class="close-letter-btn" id="closeLetterBtn" aria-label="Close letter">&times;</button>
+        
+        <div class="letter-header">
+          <div class="letter-title">Para Sa Akong Pinangga</div>
+          <div class="letter-date">Happy 21st Birthday &bull; From Tunisia with All My Heart</div>
+        </div>
+
+        <div class="letter-content" id="letterBodyText"></div>
+
+        <div class="letter-footer">
+          With all my love &bull; Nahigugma kanunay,<br>
+          <span class="dynamic-bf-name">Your Boyfriend</span> 🌹
+        </div>
+
+        <div class="letter-actions">
+          <button class="btn btn-primary" id="downloadLetterBtn">
+            <span>Save Letter 💾</span>
+          </button>
+          <button class="btn btn-secondary" id="closeLetterBtnBottom">
+            <span>Close With A Kiss 💋</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         SECTION 3: 21 Reasons Why I Love You
+         ======================================================== -->
+    <section class="section" id="reasons-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">21 Milestone Special</span>
+          <h2 class="section-title">21 Reasons Why I Love You 💖</h2>
+          <p class="section-desc">One special reason for every year of your life, celebrating our bond across the miles. Click each card to uncover it.</p>
+        </div>
+
+        <div class="reasons-stats">
+          <div class="progress-pill">
+            <span>Reasons Discovered: </span>
+            <span id="reasonsCounter">0 / 21</span>
+          </div>
+        </div>
+
+        <div class="reasons-grid" id="reasonsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 4: Kilig Meter & Mini-Quiz
+         ======================================================== -->
+    <section class="section" id="fun-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Playful &amp; Sweet</span>
+          <h2 class="section-title">The "Kilig" Meter &amp; Mini-Quiz 🥰</h2>
+          <p class="section-desc">Little interactive moments designed to put a sweet smile on your face in Cebu.</p>
+        </div>
+
+        <div class="fun-container">
+          <!-- Kilig Meter -->
+          <div class="fun-card">
+            <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 8px;">💖 The Long-Distance Love Gauge</h3>
+            <p style="font-size: 0.9rem; color: #ffb3c6; margin-bottom: 18px;">Slide to measure how much he loves you across 10,000 km today:</p>
+            
+            <div class="meter-display">
+              <div class="meter-percentage" id="meterVal">100%</div>
+              <div class="meter-status" id="meterStatus">Drag the slider to test! 💕</div>
+            </div>
+
+            <input type="range" min="0" max="100" value="70" class="love-slider" id="loveSlider">
+          </div>
+
+          <!-- Playful Quiz -->
+          <div class="fun-card">
+            <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 8px;">🤔 Quick Birthday Check</h3>
+            
+            <div class="quiz-q-1" style="margin-bottom: 22px;">
+              <p class="quiz-q">1. Who is the most breathtaking 21-year-old girl in the whole universe?</p>
+              <div class="quiz-options">
+                <button class="quiz-btn"><span>A) <span class="dynamic-gf-name">You</span> in Cebu</span> <span>✨</span></button>
+                <button class="quiz-btn"><span>B) Definitely <span class="dynamic-gf-name">You</span></span> <span>👑</span></button>
+                <button class="quiz-btn"><span>C) The sweet girl reading this right now!</span> <span>💖</span></button>
+              </div>
+              <div class="quiz-feedback" id="quizFeedback1"></div>
+            </div>
+
+            <div class="quiz-q-2">
+              <p class="quiz-q">2. Will you wait and hold on until the day we finally meet?</p>
+              <div class="quiz-options" style="display: flex; flex-direction: row; gap: 14px; position: relative; min-height: 48px;">
+                <button class="btn btn-primary" id="stayBtn" style="flex: 1;">Yes, forever and always! 🥰</button>
+                <button class="btn btn-secondary" id="runawayBtn" style="flex: 1;">No way 😜</button>
+              </div>
+              <div class="quiz-feedback" id="quizFeedback2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       FLOATING LOVE CONTROLS DOCK
+       ======================================================== -->
+  <aside class="love-dock" aria-label="Interactive Love Actions">
+    <button class="dock-btn" id="dockKissBtn" title="Send Kisses Across the Miles">
+      💋 <span>Kisses</span>
+    </button>
+    <button class="dock-btn" id="dockHugBtn" title="Send a Tight Warm Hug">
+      🫂 <span>Virtual Hug</span>
+    </button>
+    <button class="dock-btn" id="dockConfettiBtn" title="Celebrate with Confetti">
+      🎉 <span>Celebrate</span>
+    </button>
+    <button class="dock-btn" id="dockLetterBtn" title="Read Birthday Letter">
+      💌 <span>Love Letter</span>
+    </button>
+  </aside>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-heart">💖</div>
+      <p class="footer-msg">
+        "Distance is just a test to see how far love can travel."
+      </p>
+      <p class="footer-sub">
+        Tunisia 🇹🇳 to Cebu 🇵🇭 &bull; Crafted with all my love for your 21st Birthday &bull; <span class="dynamic-bf-name">Your Boyfriend</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Embedded All-In-One Scripts (Zero external dependencies for 100% reliable GitHub Pages hosting) -->
+  <script>
+    // 1. CONFIGURATION
+    window.BIRTHDAY_CONFIG = {
+      girlfriendName: "My Beautiful Palangga", 
+      nickname: "Langga",
+      age: 21,
+      birthDate: "Today",
+      hisCountry: "Tunisia 🇹🇳",
+      herCountry: "Cebu, Philippines 🇵🇭",
+      distanceKm: "10,000+ km",
+      boyfriendName: "Your Boyfriend",
+      subtitle: "To the most gorgeous girl in Cebu turning 21 today. Over 10,000 kilometers away in Tunisia, but forever in my heart ✨",
+
+      loveLetter: `Dearest Langga,
+
+Happy 21st Birthday, my beautiful Palangga! 🎂✨
+
+As you wake up today in Cebu and open this, I want you to feel my love reaching you all the way from Tunisia. Even though there are more than 10,000 kilometers and oceans between us, and even though we haven't held each other in person yet, my heart has never felt closer to anyone in my entire life.
+
+Turning 21 is such a golden milestone, and I am so grateful to be in your life celebrating this day with you. 
+
+I want to thank you for everything you are. Thank you for your patience with our time zones, for the sweet messages and calls that brighten my days, and for giving me your pure, honest love every single day. Loving you across the miles is the easiest and most beautiful choice I have ever made.
+
+You are an incredible woman, Langga—strong, beautiful, hardworking, and with a heart of gold. Every time I see your smile or hear your sweet voice, all the distance simply melts away.
+
+One day, we will close this distance. I will finally hold your hand for real, look into your eyes without a screen, and give you the tightest hug you have ever felt. Until that day comes, and for all the days after, I promise to cherish you, support all your dreams, and love you more with every passing second.
+
+Malipayong ika-21 nga Adlawng Natawhan, Palangga ko. Gihigugma tika kaayo sa tibuok nakong kasingkasing. 💖
+
+Forever & always yours,
+Your Love 🌹`,
+
+      reasons: [
+        { num: 1, title: "Your Radiant Smile", text: "The way your whole face lights up when you smile—it can brighten my darkest days in a single second." },
+        { num: 2, title: "Your Sweet Voice Messages", text: "How hearing your sweet voice notes can instantly calm my heart and turn my whole day around." },
+        { num: 3, title: "The Way You Check Up on Me", text: "How thoughtful you are, always asking how my day went and genuinely caring about how I feel." },
+        { num: 4, title: "Your Beautiful Pictures", text: "Every selfie and picture you send me takes my breath away and reminds me how stunning you are." },
+        { num: 5, title: "Your Pure Heart", text: "Your genuine kindness, sweetness, and the loving way you care for me even from miles away." },
+        { num: 6, title: "Instant Kilig", text: "Even across 10,000 kilometers, a single notification or sweet message from you gives me the biggest butterflies." },
+        { num: 7, title: "Your Contagious Laugh", text: "Your sweet laughter that never fails to put the biggest smile on my own face." },
+        { num: 8, title: "Your Inner Strength", text: "How hardworking, patient, and mature you are. You inspire me every single day." },
+        { num: 9, title: "Your Cute Pouts", text: "The adorable, playful pouts you make in your photos whenever you tease me." },
+        { num: 10, title: "Distance Means Nothing", text: "How you make thousands of kilometers feel like zero. You are closer to my heart than anyone." },
+        { num: 11, title: "The Small Details You Notice", text: "How you remember things I mentioned days ago, proving how deeply you pay attention to me." },
+        { num: 12, title: "Your Beautiful Eyes", text: "Your eyes reflect so much kindness, warmth, and genuine purity. I could admire them forever." },
+        { num: 13, title: "My Best Friend & Safe Place", text: "You aren't just my girlfriend, you are my best friend and the person I trust with everything." },
+        { num: 14, title: "Your Unwavering Loyalty", text: "How safe and secure I feel with your love, knowing our bond is unbreakable despite the distance." },
+        { num: 15, title: "Watching You Turn 21", text: "Seeing you reach this beautiful milestone and grow into such a graceful woman makes me so proud." },
+        { num: 16, title: "Your Playful Side", text: "The silly jokes, funny selfies, and goofy moments only we share together in our private world." },
+        { num: 17, title: "How Patient You Are", text: "Handling the time differences and waiting for each other with so much understanding and grace." },
+        { num: 18, title: "Our Shared Future", text: "Every dream and plan we make for the day we finally meet and never have to say goodbye again." },
+        { num: 19, title: "The First Hug We Will Share", text: "Knowing that the moment I finally hug you in person will be the greatest moment of my life." },
+        { num: 20, title: "You Make Me a Better Man", text: "Loving you gives me purpose and motivates me to work hard for our future together." },
+        { num: 21, title: "My Heart Chose You", text: "Out of 8 billion people on Earth, across oceans and continents, my soul chose you. Palangga kaayo tika, Langga!" }
+      ]
+    };
+
+    // 2. AUDIO SYNTHESIZER
+    class SoundEngine {
+      constructor() {
+        this.ctx = null;
+        this.isPlayingMusic = false;
+        this.musicTimer = null;
+        this.tempo = 90;
+        this.stepIndex = 0;
+        this.notes = {
+          C4: 261.63, D4: 293.66, E4: 329.63, F4: 349.23, G4: 392.00, A4: 440.00, B4: 493.88,
+          C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46, G5: 783.99, A5: 880.00, B5: 987.77,
+          C6: 1046.50
+        };
+        this.birthdayMelody = [
+          { note: 'G4', dur: 0.75 }, { note: 'G4', dur: 0.25 }, { note: 'A4', dur: 1.0 }, { note: 'G4', dur: 1.0 }, { note: 'C5', dur: 1.0 }, { note: 'B4', dur: 2.0 },
+          { note: 'G4', dur: 0.75 }, { note: 'G4', dur: 0.25 }, { note: 'A4', dur: 1.0 }, { note: 'G4', dur: 1.0 }, { note: 'D5', dur: 1.0 }, { note: 'C5', dur: 2.0 },
+          { note: 'G4', dur: 0.75 }, { note: 'G4', dur: 0.25 }, { note: 'G5', dur: 1.0 }, { note: 'E5', dur: 1.0 }, { note: 'C5', dur: 1.0 }, { note: 'B4', dur: 1.0 }, { note: 'A4', dur: 1.5 },
+          { note: 'F5', dur: 0.75 }, { note: 'F5', dur: 0.25 }, { note: 'E5', dur: 1.0 }, { note: 'C5', dur: 1.0 }, { note: 'D5', dur: 1.0 }, { note: 'C5', dur: 2.5 },
+          { note: 'E5', dur: 0.8 }, { note: 'G5', dur: 0.8 }, { note: 'C6', dur: 1.5 },
+          { note: 'A5', dur: 0.8 }, { note: 'F5', dur: 0.8 }, { note: 'D5', dur: 1.2 },
+          { note: 'G4', dur: 0.6 }, { note: 'C5', dur: 0.6 }, { note: 'E5', dur: 0.6 }, { note: 'G5', dur: 1.5 }
+        ];
+      }
+
+      init() {
+        if (!this.ctx) {
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if (AudioCtx) this.ctx = new AudioCtx();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      }
+
+      playChime(freq, duration = 0.8, gainVal = 0.18) {
+        if (!this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          const osc1 = this.ctx.createOscillator();
+          const osc2 = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc1.type = 'sine';
+          osc2.type = 'triangle';
+          osc1.frequency.setValueAtTime(freq, now);
+          osc2.frequency.setValueAtTime(freq * 2, now);
+          gain.gain.setValueAtTime(0.001, now);
+          gain.gain.linearRampToValueAtTime(gainVal, now + 0.015);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+          osc1.connect(gain);
+          osc2.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc1.start(now);
+          osc2.start(now);
+          osc1.stop(now + duration);
+          osc2.stop(now + duration);
+        } catch (e) {}
+      }
+
+      startMusic() {
+        this.init();
+        if (this.isPlayingMusic) return;
+        this.isPlayingMusic = true;
+        this.stepIndex = 0;
+        this.playNextNote();
+      }
+
+      playNextNote() {
+        if (!this.isPlayingMusic) return;
+        const item = this.birthdayMelody[this.stepIndex % this.birthdayMelody.length];
+        const freq = this.notes[item.note] || 440;
+        const durSeconds = item.dur * (60 / this.tempo);
+        this.playChime(freq, durSeconds * 1.5, 0.16);
+        this.stepIndex++;
+        this.musicTimer = setTimeout(() => this.playNextNote(), durSeconds * 1000);
+      }
+
+      stopMusic() {
+        this.isPlayingMusic = false;
+        if (this.musicTimer) {
+          clearTimeout(this.musicTimer);
+          this.musicTimer = null;
+        }
+      }
+
+      toggleMusic(onUpdate) {
+        this.init();
+        if (this.isPlayingMusic) {
+          this.stopMusic();
+          if (onUpdate) onUpdate(false);
+          return false;
+        } else {
+          this.startMusic();
+          if (onUpdate) onUpdate(true);
+          return true;
+        }
+      }
+
+      playClick() { this.init(); this.playChime(659.25, 0.15, 0.08); }
+      playBlowCandles() {
+        this.init();
+        this.playChime(523.25, 0.3, 0.1);
+        setTimeout(() => this.playChime(659.25, 0.4, 0.12), 150);
+        setTimeout(() => this.playChime(783.99, 0.5, 0.15), 300);
+        setTimeout(() => this.playChime(1046.50, 0.8, 0.18), 450);
+      }
+      playStamp() {
+        this.init();
+        this.playChime(523.25, 0.25, 0.18);
+        setTimeout(() => this.playChime(783.99, 0.35, 0.15), 100);
+      }
+      playPop() {
+        this.init();
+        if (!this.ctx) return;
+        const now = this.ctx.currentTime;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.frequency.setValueAtTime(350, now);
+        osc.frequency.exponentialRampToValueAtTime(800, now + 0.07);
+        gain.gain.setValueAtTime(0.1, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(now);
+        osc.stop(now + 0.07);
+      }
+    }
+    window.soundEngine = new SoundEngine();
+
+    // 3. ZERO-LAG FX ENGINE
+    (function() {
+      const container = document.createElement('div');
+      container.id = 'fx-container';
+      container.style.position = 'fixed';
+      container.style.top = '0';
+      container.style.left = '0';
+      container.style.width = '100vw';
+      container.style.height = '100vh';
+      container.style.pointerEvents = 'none';
+      container.style.zIndex = '9999';
+      container.style.overflow = 'hidden';
+      document.body ? document.body.appendChild(container) : window.addEventListener('DOMContentLoaded', () => document.body.appendChild(container));
+
+      const style = document.createElement('style');
+      style.textContent = `
+        .fx-kiss-item {
+          position: absolute;
+          user-select: none;
+          pointer-events: none;
+          will-change: transform, opacity;
+          animation: floatKiss 2s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+        }
+        @keyframes floatKiss {
+          0% { opacity: 0; transform: translate3d(var(--startX), var(--startY), 0) scale(0.4) rotate(0deg); }
+          15% { opacity: 1; transform: translate3d(var(--midX), var(--midY), 0) scale(1.2) rotate(var(--rot)); }
+          100% { opacity: 0; transform: translate3d(var(--endX), var(--endY), 0) scale(1.5) rotate(calc(var(--rot) * 2)); }
+        }
+        .fx-confetti-piece {
+          position: absolute;
+          width: 10px;
+          height: 14px;
+          border-radius: 2px;
+          pointer-events: none;
+          will-change: transform, opacity;
+          animation: fallConfetti 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+        @keyframes fallConfetti {
+          0% { opacity: 1; transform: translate3d(var(--x), var(--y), 0) rotate(0deg) scale(1); }
+          100% { opacity: 0; transform: translate3d(calc(var(--x) + var(--drift)), calc(var(--y) + 380px), 0) rotate(720deg) scale(0.6); }
+        }
+      `;
+      document.head.appendChild(style);
+
+      const colors = ['#ff4d6d', '#ff758f', '#ffccd5', '#ffd700', '#f72585', '#ffffff'];
+
+      window.fx = {
+        kissShower: function(count = 15) {
+          const symbols = ['💋', '💖', '🥰', '😘', '✨'];
+          const targetCount = Math.min(count, 18);
+          for (let i = 0; i < targetCount; i++) {
+            setTimeout(() => {
+              const el = document.createElement('div');
+              el.className = 'fx-kiss-item';
+              el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+              const startX = Math.random() * (window.innerWidth - 60) + 30;
+              const startY = window.innerHeight * (0.55 + Math.random() * 0.35);
+              const endX = startX + (Math.random() - 0.5) * 140;
+              const endY = startY - (180 + Math.random() * 220);
+              const midX = (startX + endX) / 2 + (Math.random() - 0.5) * 50;
+              const midY = (startY + endY) / 2;
+              const rot = (Math.random() - 0.5) * 45 + 'deg';
+              el.style.fontSize = (24 + Math.random() * 16) + 'px';
+              el.style.setProperty('--startX', `${startX}px`);
+              el.style.setProperty('--startY', `${startY}px`);
+              el.style.setProperty('--midX', `${midX}px`);
+              el.style.setProperty('--midY', `${midY}px`);
+              el.style.setProperty('--endX', `${endX}px`);
+              el.style.setProperty('--endY', `${endY}px`);
+              el.style.setProperty('--rot', rot);
+              container.appendChild(el);
+              setTimeout(() => el.remove(), 2100);
+            }, i * 65);
+          }
+        },
+
+        burstConfetti: function(originX = window.innerWidth / 2, originY = window.innerHeight / 2, count = 25) {
+          const targetCount = Math.min(count, 30);
+          for (let i = 0; i < targetCount; i++) {
+            const piece = document.createElement('div');
+            piece.className = 'fx-confetti-piece';
+            piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            const drift = (Math.random() - 0.5) * 260 + 'px';
+            const angle = (Math.PI * 2 * i) / targetCount;
+            const radius = Math.random() * 60 + 20;
+            piece.style.setProperty('--x', `${originX + Math.cos(angle) * radius}px`);
+            piece.style.setProperty('--y', `${originY + Math.sin(angle) * radius}px`);
+            piece.style.setProperty('--drift', drift);
+            container.appendChild(piece);
+            setTimeout(() => piece.remove(), 2300);
+          }
+        },
+
+        heartSpark: function(x, y) {
+          const el = document.createElement('div');
+          el.className = 'fx-kiss-item';
+          el.textContent = '💖';
+          el.style.fontSize = '20px';
+          el.style.setProperty('--startX', `${x}px`);
+          el.style.setProperty('--startY', `${y}px`);
+          el.style.setProperty('--midX', `${x + (Math.random() - 0.5) * 30}px`);
+          el.style.setProperty('--midY', `${y - 40}px`);
+          el.style.setProperty('--endX', `${x + (Math.random() - 0.5) * 60}px`);
+          el.style.setProperty('--endY', `${y - 90}px`);
+          el.style.setProperty('--rot', '0deg');
+          container.appendChild(el);
+          setTimeout(() => el.remove(), 1900);
+        },
+
+        birthdayExtravaganza: function() {
+          window.fx.kissShower(15);
+          window.fx.burstConfetti(window.innerWidth / 2, window.innerHeight * 0.4, 30);
+        }
+      };
+    })();
+
+    // 4. INTERACTION LOGIC
+    document.addEventListener('DOMContentLoaded', () => {
+      const config = window.BIRTHDAY_CONFIG || {};
+
+      document.querySelectorAll('.dynamic-gf-name').forEach(el => el.textContent = config.girlfriendName || "My Palangga");
+      document.querySelectorAll('.dynamic-nickname').forEach(el => el.textContent = config.nickname || "Langga");
+      document.querySelectorAll('.dynamic-bf-name').forEach(el => el.textContent = config.boyfriendName || "Your Boyfriend");
+
+      const letterBody = document.getElementById('letterBodyText');
+      if (letterBody && config.loveLetter) {
+        letterBody.textContent = config.loveLetter;
+      }
+
+      const musicToggleBtn = document.getElementById('musicToggleBtn');
+      const vinylRecord = document.getElementById('vinylRecord');
+      const audioStatusText = document.getElementById('audioStatusText');
+      const welcomeGate = document.getElementById('welcomeGate');
+      const enterSiteBtn = document.getElementById('enterSiteBtn');
+
+      function startBirthdaySong() {
+        if (window.soundEngine) {
+          window.soundEngine.startMusic();
+          if (vinylRecord) vinylRecord.classList.add('spinning');
+          if (audioStatusText) audioStatusText.textContent = "Playing Happy Birthday 🎶";
+        }
+      }
+
+      if (enterSiteBtn && welcomeGate) {
+        enterSiteBtn.addEventListener('click', () => {
+          startBirthdaySong();
+          welcomeGate.classList.add('dismissed');
+          if (window.fx) {
+            window.fx.burstConfetti(window.innerWidth / 2, window.innerHeight * 0.45, 30);
+          }
+        });
+      }
+
+      try { startBirthdaySong(); } catch(e) {}
+
+      if (musicToggleBtn) {
+        musicToggleBtn.addEventListener('click', () => {
+          if (window.soundEngine) {
+            window.soundEngine.toggleMusic((isPlaying) => {
+              if (isPlaying) {
+                vinylRecord.classList.add('spinning');
+                audioStatusText.textContent = "Playing Happy Birthday 🎶";
+              } else {
+                vinylRecord.classList.remove('spinning');
+                audioStatusText.textContent = "Play Song 🎵";
+              }
+            });
+          }
+        });
+      }
+
+      // Cake & Candles
+      const blowCandlesBtn = document.getElementById('blowCandlesBtn');
+      const cakeStage = document.getElementById('cakeStage');
+      const wishUnlockedCard = document.getElementById('wishUnlockedCard');
+      let candlesBlown = false;
+
+      const candlesRow = document.getElementById('candlesRow');
+      if (candlesRow) {
+        candlesRow.innerHTML = '';
+        for (let i = 0; i < 7; i++) {
+          const candle = document.createElement('div');
+          candle.className = 'candle';
+          candle.innerHTML = `<div class="candle-flame"></div>`;
+          candle.addEventListener('click', () => extinguishCandle(candle));
+          candlesRow.appendChild(candle);
+        }
+      }
+
+      function extinguishCandle(candle) {
+        if (!candle.classList.contains('blown')) {
+          candle.classList.add('blown');
+          if (window.soundEngine) window.soundEngine.playBlowCandles();
+          checkAllCandles();
+        }
+      }
+
+      function checkAllCandles() {
+        const remaining = Array.from(document.querySelectorAll('.candle')).filter(c => !c.classList.contains('blown'));
+        if (remaining.length === 0 && !candlesBlown) onAllCandlesBlown();
+      }
+
+      function onAllCandlesBlown() {
+        candlesBlown = true;
+        if (blowCandlesBtn) {
+          blowCandlesBtn.textContent = "✨ Wishes Sent Across the Miles! ✨";
+          blowCandlesBtn.style.background = "linear-gradient(135deg, #48bb78 0%, #38a169 100%)";
+        }
+        if (wishUnlockedCard) wishUnlockedCard.style.display = 'block';
+        if (window.fx) {
+          const rect = cakeStage.getBoundingClientRect();
+          window.fx.burstConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2, 30);
+          setTimeout(() => window.fx.kissShower(15), 500);
+        }
+      }
+
+      if (blowCandlesBtn) {
+        blowCandlesBtn.addEventListener('click', () => {
+          document.querySelectorAll('.candle').forEach((c, idx) => {
+            setTimeout(() => c.classList.add('blown'), idx * 80);
+          });
+          if (window.soundEngine) window.soundEngine.playBlowCandles();
+          setTimeout(onAllCandlesBlown, 600);
+        });
+      }
+
+      // Gift Box & Love Letter
+      const giftBoxInteractive = document.getElementById('giftBoxInteractive');
+      const letterModal = document.getElementById('letterModal');
+      const closeLetterBtn = document.getElementById('closeLetterBtn');
+      const closeLetterBtnBottom = document.getElementById('closeLetterBtnBottom');
+      const downloadLetterBtn = document.getElementById('downloadLetterBtn');
+
+      function openLetter() {
+        if (window.soundEngine) window.soundEngine.playClick();
+        if (letterModal) {
+          letterModal.classList.add('open');
+          if (window.fx) window.fx.kissShower(15);
+        }
+      }
+
+      function closeLetter() {
+        if (letterModal) {
+          letterModal.classList.remove('open');
+          if (window.soundEngine) window.soundEngine.playClick();
+        }
+      }
+
+      if (giftBoxInteractive) giftBoxInteractive.addEventListener('click', openLetter);
+      if (closeLetterBtn) closeLetterBtn.addEventListener('click', closeLetter);
+      if (closeLetterBtnBottom) closeLetterBtnBottom.addEventListener('click', closeLetter);
+      if (letterModal) {
+        letterModal.addEventListener('click', (e) => {
+          if (e.target === letterModal) closeLetter();
+        });
+      }
+
+      if (downloadLetterBtn) {
+        downloadLetterBtn.addEventListener('click', () => {
+          const cleanName = (config.girlfriendName || "Palangga").replace(/[^a-zA-Z0-9]/g, ' ').trim();
+          const textToSave = config.loveLetter || "Happy 21st Birthday, Langga! Gihigugma tika kaayo.";
+          const blob = new Blob([textToSave], { type: 'text/plain;charset=utf-8' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `Birthday-Love-Letter-21st-${cleanName}.txt`;
+          a.click();
+          URL.revokeObjectURL(url);
+          if (window.soundEngine) window.soundEngine.playStamp();
+        });
+      }
+
+      // 21 Reasons
+      const reasonsGrid = document.getElementById('reasonsGrid');
+      const reasonsCounter = document.getElementById('reasonsCounter');
+      const reasonsList = config.reasons || [];
+
+      if (reasonsGrid && reasonsList.length > 0) {
+        reasonsGrid.innerHTML = '';
+        reasonsList.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'reason-card';
+          card.innerHTML = `
+            <div class="card-inner">
+              <div class="card-face card-front">
+                <div class="reason-number-badge">${item.num}</div>
+                <div class="card-front-title">${item.title}</div>
+                <div class="card-front-tap">✨ Click to reveal ✨</div>
+              </div>
+              <div class="card-face card-back">
+                <div class="card-back-title">#${item.num} - ${item.title}</div>
+                <div class="card-back-text">${item.text}</div>
+              </div>
+            </div>
+          `;
+
+          card.addEventListener('click', () => {
+            card.classList.toggle('is-flipped');
+            if (window.soundEngine) window.soundEngine.playClick();
+            if (window.fx) {
+              const rect = card.getBoundingClientRect();
+              window.fx.heartSpark(rect.left + rect.width / 2, rect.top + rect.height / 2);
+            }
+            const allFlipped = document.querySelectorAll('.reason-card.is-flipped').length;
+            if (reasonsCounter) reasonsCounter.textContent = `${allFlipped} / ${reasonsList.length}`;
+
+            if (allFlipped === reasonsList.length && !card.dataset.completed) {
+              card.dataset.completed = "true";
+              setTimeout(() => {
+                alert("💖 You discovered all 21 reasons! Even with 10,000 km between Tunisia and Cebu, my heart will always belong to you. Palangga kaayo tika, Langga!");
+                if (window.fx) window.fx.birthdayExtravaganza();
+              }, 400);
+            }
+          });
+
+          reasonsGrid.appendChild(card);
+        });
+      }
+
+      // Kilig Meter
+      const loveSlider = document.getElementById('loveSlider');
+      const meterVal = document.getElementById('meterVal');
+      const meterStatus = document.getElementById('meterStatus');
+
+      if (loveSlider && meterVal && meterStatus) {
+        loveSlider.addEventListener('input', (e) => {
+          const val = parseInt(e.target.value);
+          if (val < 25) {
+            meterVal.textContent = `${val}%`;
+            meterStatus.textContent = "Error: Too low! My love is way bigger than that! 😂";
+          } else if (val < 65) {
+            meterVal.textContent = `${val}%`;
+            meterStatus.textContent = "Getting warmer... but keep sliding! 💕";
+          } else if (val < 99) {
+            meterVal.textContent = `${val}%`;
+            meterStatus.textContent = "Bigger than all the 10,000 km between us! ✨";
+          } else {
+            meterVal.textContent = `1,000,000% ∞`;
+            meterStatus.textContent = "🔥 OVERFLOW! KILIG TO THE MAX! INFINITY & BEYOND! 🚀💖";
+            if (window.fx) window.fx.kissShower(15);
+          }
+        });
+      }
+
+      // Quiz & Runaway Button
+      const quizFeedback1 = document.getElementById('quizFeedback1');
+      document.querySelectorAll('.quiz-q-1 .quiz-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (quizFeedback1) {
+            quizFeedback1.style.display = 'block';
+            quizFeedback1.textContent = "🎉 100% CORRECT! You are truly the most gorgeous girl in the universe! 🥰";
+            if (window.soundEngine) window.soundEngine.playStamp();
+            if (window.fx) window.fx.kissShower(15);
+          }
+        });
+      });
+
+      const runawayBtn = document.getElementById('runawayBtn');
+      const yesBtn = document.getElementById('stayBtn');
+      const quizFeedback2 = document.getElementById('quizFeedback2');
+
+      if (runawayBtn) {
+        const moveRunaway = () => {
+          const parent = runawayBtn.parentElement;
+          const maxX = parent.offsetWidth - runawayBtn.offsetWidth;
+          const randX = Math.random() * (maxX - 20);
+          const randY = (Math.random() - 0.5) * 100;
+          runawayBtn.style.position = 'relative';
+          runawayBtn.style.left = `${randX}px`;
+          runawayBtn.style.top = `${randY}px`;
+          if (window.soundEngine) window.soundEngine.playPop();
+        };
+        runawayBtn.addEventListener('mouseover', moveRunaway);
+        runawayBtn.addEventListener('touchstart', moveRunaway, { passive: true });
+        runawayBtn.addEventListener('click', moveRunaway);
+      }
+
+      if (yesBtn) {
+        yesBtn.addEventListener('click', () => {
+          if (quizFeedback2) {
+            quizFeedback2.style.display = 'block';
+            quizFeedback2.textContent = "🥺 I knew it! Distance can't stop us. I will wait and hold on until the day I finally hold you in my arms! Gihigugma tika kaayo!";
+            if (window.soundEngine) window.soundEngine.playStamp();
+            if (window.fx) window.fx.kissShower(18);
+          }
+        });
+      }
+
+      // Dock Actions
+      const dockKissBtn = document.getElementById('dockKissBtn');
+      const dockHugBtn = document.getElementById('dockHugBtn');
+      const dockConfettiBtn = document.getElementById('dockConfettiBtn');
+      const dockLetterBtn = document.getElementById('dockLetterBtn');
+
+      if (dockKissBtn) {
+        dockKissBtn.addEventListener('click', () => {
+          if (window.fx) window.fx.kissShower(15);
+          if (window.soundEngine) window.soundEngine.playClick();
+        });
+      }
+      if (dockHugBtn) {
+        dockHugBtn.addEventListener('click', () => {
+          if (window.soundEngine) window.soundEngine.playChime(523.25, 0.8, 0.15);
+          if (window.fx) window.fx.kissShower(15);
+        });
+      }
+      if (dockConfettiBtn) {
+        dockConfettiBtn.addEventListener('click', () => {
+          if (window.fx) window.fx.burstConfetti(window.innerWidth / 2, window.innerHeight * 0.4, 25);
+          if (window.soundEngine) window.soundEngine.playPop();
+        });
+      }
+      if (dockLetterBtn) dockLetterBtn.addEventListener('click', openLetter);
+    });
+  </script>
+</body>
+</html>
